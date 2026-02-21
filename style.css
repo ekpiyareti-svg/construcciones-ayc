@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     background: #111111;
     color: #e4e4e4;
 }
@@ -30,9 +30,7 @@ body {
 }
 
 .empresa h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    font-size: 28px;
+    font-size: 26px;
     color: #ffffff;
 }
 
@@ -50,24 +48,20 @@ body {
 }
 
 .hero-overlay h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    font-size: 44px;
+    font-size: 42px;
     color: #ff2a2a;
     margin-bottom: 10px;
 }
 
 .hero-overlay p {
-    font-family: 'Open Sans', sans-serif;
     font-size: 18px;
     color: #cccccc;
 }
 
 /* TITULOS */
 .titulo {
-    font-family: 'Montserrat', sans-serif;
     text-align: center;
-    font-size: 36px;
+    font-size: 34px;
     margin-bottom: 50px;
     color: #ff2a2a;
 }
@@ -101,13 +95,11 @@ body {
 }
 
 .card h3 {
-    font-family: 'Montserrat', sans-serif;
     color: #ff2a2a;
     margin-bottom: 15px;
 }
 
 .card p {
-    font-family: 'Open Sans', sans-serif;
     line-height: 1.6;
     color: #d0d0d0;
 }
@@ -118,20 +110,31 @@ body {
     background: #0f0f0f;
 }
 
-.bloque-elegirnos {
-    max-width: 900px;
-    margin: 0 auto;
-    background: #222222;
-    padding: 30px;
-    border-radius: 12px;
-    border: 1px solid #333;
+.porque-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
 }
 
-.texto-peque {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
+.card-pe {
+    background: #222222;
+    padding: 25px;
+    border-radius: 12px;
+    max-width: 300px;
+    border: 1px solid #333;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.card-pe h3 {
+    color: #ff2a2a;
+    margin-bottom: 15px;
+}
+
+.card-pe p {
+    line-height: 1.6;
     color: #d0d0d0;
-    line-height: 1.7;
 }
 
 /* GALERÍA */
@@ -148,7 +151,6 @@ body {
 
 .galeria-grid img {
     width: 100%;
-    max-width: 780px;
     height: 230px;
     object-fit: cover;
     border-radius: 10px;
@@ -174,15 +176,17 @@ body {
     justify-content: center;
 }
 
+.texto {
+    max-width: 500px;
+}
+
 .texto h2 {
-    font-family: 'Montserrat', sans-serif;
     color: #ff2a2a;
     font-size: 32px;
     margin-bottom: 20px;
 }
 
 .texto p {
-    font-family: 'Open Sans', sans-serif;
     line-height: 1.7;
     color: #cfcfcf;
 }
@@ -205,6 +209,7 @@ body {
     flex-wrap: wrap;
     gap: 40px;
     justify-content: center;
+    align-items: flex-start;
     margin-bottom: 30px;
 }
 
@@ -212,7 +217,8 @@ body {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    max-width: 400px;
+    flex: 1 1 350px;
+    max-width: 450px;
 }
 
 .form-contacto input,
@@ -240,6 +246,18 @@ body {
     background: #e60000;
 }
 
+.mapa-container {
+    flex: 1 1 400px;
+    max-width: 600px;
+    height: 400px;
+}
+
+.mapa-container iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+}
+
 .info-contacto {
     margin-top: 20px;
     text-align: center;
@@ -265,7 +283,7 @@ body {
         align-items: center;
     }
 
-    .experiencia-contenido {
-        flex-direction: column;
+    .mapa-container {
+        height: 300px;
     }
 }

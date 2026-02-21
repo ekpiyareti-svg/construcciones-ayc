@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
     background: #111111;
     color: #e4e4e4;
 }
@@ -30,7 +30,9 @@ body {
 }
 
 .empresa h1 {
-    font-size: 26px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 28px;
     color: #ffffff;
 }
 
@@ -48,49 +50,24 @@ body {
 }
 
 .hero-overlay h2 {
-    font-size: 42px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 44px;
     color: #ff2a2a;
     margin-bottom: 10px;
 }
 
 .hero-overlay p {
+    font-family: 'Roboto', sans-serif;
     font-size: 18px;
     color: #cccccc;
 }
 
-/* POR QUÉ ELEGIRNOS */
-.porque-elegirnos {
-    padding: 60px 20px;
-    display: flex;
-    justify-content: center;
-}
-
-.porque-elegirnos-bloque {
-    background: #1a1a1a;
-    padding: 40px;
-    border-radius: 16px;
-    max-width: 900px;
-    text-align: center;
-    box-shadow: 0 0 20px rgba(255,0,0,0.2);
-}
-
-.porque-elegirnos-bloque h2 {
-    color: #ff2a2a;
-    font-size: 34px;
-    margin-bottom: 25px;
-}
-
-.porque-elegirnos-bloque p {
-    color: #e0e0e0;
-    font-size: 18px;
-    line-height: 1.8;
-    margin-bottom: 15px;
-}
-
 /* TITULOS */
 .titulo {
+    font-family: 'Montserrat', sans-serif;
     text-align: center;
-    font-size: 34px;
+    font-size: 36px;
     margin-bottom: 50px;
     color: #ff2a2a;
 }
@@ -124,45 +101,33 @@ body {
 }
 
 .card h3 {
+    font-family: 'Montserrat', sans-serif;
     color: #ff2a2a;
     margin-bottom: 15px;
 }
 
 .card p {
+    font-family: 'Roboto', sans-serif;
     line-height: 1.6;
     color: #d0d0d0;
 }
 
-/* SERVICIOS */
-.servicios {
-    background: #1a1a1a;
-    padding: 60px 20px;
+/* POR QUE ELEGIRNOS */
+.porque-elegirnos {
+    padding: 80px 20px;
+    background: #0f0f0f;
 }
 
-.servicios-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    justify-content: center;
-}
-
-.servicio-card {
-    background: #222;
-    padding: 20px;
+.bloque-elegirnos {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #222222;
+    padding: 30px;
     border-radius: 12px;
-    width: 220px;
-    text-align: center;
-    transition: 0.3s;
-}
-
-.servicio-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 8px 20px rgba(255,0,0,0.3);
-}
-
-.servicio-card h3 {
-    color: #e4e4e4;
-    margin-top: 10px;
+    border: 1px solid #333;
+    color: #d0d0d0;
+    line-height: 1.7;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* GALERÍA */
@@ -209,119 +174,81 @@ body {
 }
 
 .texto h2 {
+    font-family: 'Montserrat', sans-serif;
     color: #ff2a2a;
     font-size: 32px;
     margin-bottom: 20px;
 }
 
 .texto p {
+    font-family: 'Roboto', sans-serif;
     line-height: 1.7;
     color: #cfcfcf;
 }
 
 .imagen img {
-    width: 100%;
-    max-width: 400px;
-    height: auto;
+    width: 400px;
+    max-width: 100%;
     border-radius: 12px;
     object-fit: cover;
 }
 
-/* CONTACTO FINAL */
-.contacto-final-contenido {
+/* CONTACTO + MAPA */
+.contacto-mapa {
+    padding: 80px 20px;
+    background: #111111;
+}
+
+.contacto-flex {
     display: flex;
-    gap: 40px;
-    max-width: 1400px;
-    margin: 0 auto 80px auto;
     flex-wrap: wrap;
+    gap: 40px;
     justify-content: center;
+    margin-bottom: 30px;
 }
 
 .form-contacto {
-    background: #222;
-    padding: 30px;
-    border-radius: 12px;
-    max-width: 400px;
-    flex: 1;
     display: flex;
     flex-direction: column;
     gap: 15px;
-}
-
-.form-contacto label {
-    font-weight: bold;
-    color: #ff2a2a;
+    max-width: 400px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .form-contacto input,
 .form-contacto textarea {
-    padding: 10px;
-    border-radius: 6px;
-    border: none;
-    outline: none;
-    font-size: 16px;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #333;
+    background: #222;
+    color: #fff;
+    resize: none;
+    font-family: 'Roboto', sans-serif;
 }
 
 .form-contacto button {
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
     background: #ff2a2a;
     color: #fff;
-    border: none;
-    padding: 12px;
-    border-radius: 6px;
+    font-weight: bold;
     cursor: pointer;
-    font-size: 16px;
     transition: 0.3s;
 }
 
 .form-contacto button:hover {
-    background: #b30000;
-}
-
-.contacto-mapa {
-    position: relative;
-    flex: 1;
-    min-width: 300px;
-    height: 500px;
-}
-
-.contacto-mapa iframe {
-    width: 100%;
-    height: 100%;
-    border-radius: 12px;
-}
-
-.pin-rojo {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 25px;
-    height: 25px;
-    background-color: red;
-    border-radius: 50%;
-    border: 2px solid white;
-    transform: translate(-50%, -100%) rotate(45deg);
-    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    background: #e60000;
 }
 
 .info-contacto {
-    background: #222;
-    padding: 30px;
-    border-radius: 12px;
-    flex: 1;
-    min-width: 250px;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+    margin-top: 20px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
 }
 
-.info-contacto a {
-    color: #ff2a2a;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.info-contacto a:hover {
-    text-decoration: underline;
+.info-contacto p {
+    margin: 5px 0;
 }
 
 /* FOOTER */
@@ -331,19 +258,5 @@ body {
     padding: 25px;
     border-top: 2px solid #b30000;
     color: #888;
-}
-
-/* RESPONSIVE */
-@media screen and (max-width: 1100px) {
-    .contacto-final-contenido,
-    .servicios-grid,
-    .cards,
-    .experiencia-contenido {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .contacto-mapa {
-        height: 400px;
-    }
+    font-family: 'Roboto', sans-serif;
 }

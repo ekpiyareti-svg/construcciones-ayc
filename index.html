@@ -4,6 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>CONSTRUCCIONES AYC SPA</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 <script defer src="script.js"></script>
 </head>
@@ -24,19 +26,6 @@
     <div class="hero-overlay">
         <h2>ESTRUCTURAS METÁLICAS Y CONSTRUCCIÓN</h2>
         <p>Calidad, compromiso y profesionalismo en cada proyecto</p>
-    </div>
-</section>
-
-<!-- POR QUÉ ELEGIRNOS -->
-<section class="porque-elegirnos">
-    <div class="porque-elegirnos-bloque">
-        <h2>Por Qué Elegirnos</h2>
-        <p>
-            En <strong>Construcciones AYC SPA</strong> ofrecemos una gama excepcional de servicios de construcción y fabricación de estructuras metálicas en la Región de Los Lagos. Contamos con 30 años de experiencia, brindando calidad y economía.
-        </p>
-        <p>
-            Nos adaptamos a tus necesidades y asesoramos de acuerdo a lo que tienes en mente. Trabajamos con tus objetivos para preparar de manera eficiente tu proyecto, utilizando una combinación de mano de obra y vehículos de alta resistencia técnica.
-        </p>
     </div>
 </section>
 
@@ -71,30 +60,18 @@
     </div>
 </section>
 
-<!-- SERVICIOS -->
-<section class="servicios">
-    <h2 class="titulo">NUESTROS SERVICIOS</h2>
-    <div class="servicios-grid">
-        <div class="servicio-card">
-            <div class="icono">🏗️</div>
-            <h3>Fabricación de estructuras metálicas</h3>
-        </div>
-        <div class="servicio-card">
-            <div class="icono">🏠</div>
-            <h3>Galpones y techumbres industriales</h3>
-        </div>
-        <div class="servicio-card">
-            <div class="icono">🔧</div>
-            <h3>Proyectos residenciales y comerciales</h3>
-        </div>
-        <div class="servicio-card">
-            <div class="icono">📐</div>
-            <h3>Asesoría técnica especializada</h3>
-        </div>
-        <div class="servicio-card">
-            <div class="icono">✅</div>
-            <h3>Proyectos llave en mano</h3>
-        </div>
+<!-- POR QUE ELEGIRNOS -->
+<section class="porque-elegirnos">
+    <h2 class="titulo">¿Por Qué Elegirnos?</h2>
+    <div class="bloque-elegirnos">
+        <p>
+            En Construcciones Ayc ofrecemos una gama excepcional de servicios de construcción y fabricación de estructuras metálicas en la Región de Los Lagos. 
+            Contamos con 30 años de experiencia, brindando calidad y economía.
+        </p>
+        <p>
+            Nos adaptamos a tus necesidades y asesoramos de acuerdo a lo que tienes en mente, entendiendo las exigencias de cada proyecto. 
+            Trabajamos con tus objetivos en mente para preparar la manera más eficiente posible, utilizando mano de obra y vehículos de alta resistencia técnica.
+        </p>
     </div>
 </section>
 
@@ -103,6 +80,7 @@
     <h2 class="titulo">NUESTROS PROYECTOS</h2>
     <div class="galeria-grid">
         <img src="images/obra1.jpeg" alt="Obra 1">
+        <img src="images/obra2.jpg" alt="Obra 2">
         <img src="images/obra3.jpg" alt="Obra 3">
         <img src="images/obra4.jpg" alt="Obra 4">
         <img src="images/obra5.jpg" alt="Obra 5">
@@ -127,40 +105,29 @@
     </div>
 </section>
 
-<!-- CONTACTO FINAL -->
-<section class="contacto-final">
-    <h2 class="titulo">CONTACTO</h2>
-    <div class="contacto-final-contenido">
-        <!-- FORMULARIO -->
-        <form class="form-contacto" action="https://formspree.io/f/yourformid" method="POST">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
-            
-            <label for="email">Correo:</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje" name="mensaje" rows="6" required></textarea>
-            
-            <button type="submit">Enviar</button>
-        </form>
+<!-- CONTACTO + MAPA -->
+<section class="contacto-mapa">
+    <div class="contacto-contenido">
+        <h2 class="titulo">CONTÁCTANOS</h2>
+        <div class="contacto-flex">
+            <!-- Formulario -->
+            <form class="form-contacto">
+                <input type="text" placeholder="Nombre" required>
+                <input type="email" placeholder="Correo electrónico" required>
+                <textarea placeholder="Mensaje" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
 
-        <!-- MAPA -->
-        <div class="contacto-mapa">
+            <!-- Mapa -->
             <iframe
-                src="https://www.google.com/maps?q=-40.5761897,-73.1149469&hl=es;z=15&output=embed"
-                width="100%"
-                height="100%"
-                style="border:0; border-radius:12px;"
-                allowfullscreen=""
-                loading="lazy">
+              src="https://www.google.com/maps?q=-40.5761897,-73.1149469&hl=es&z=15&output=embed"
+              width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy">
             </iframe>
-            <div class="pin-rojo"></div>
         </div>
 
-        <!-- INFORMACIÓN DE CONTACTO -->
+        <!-- Info de contacto -->
         <div class="info-contacto">
-            <p><strong>WhatsApp / Teléfono:</strong> <a href="https://wa.me/56987308343" target="_blank">+56 9 8730 8343</a></p>
+            <p><strong>Representante:</strong> Camila Bustamante J.</p>
             <p><strong>Empresa:</strong> CONSTRUCCIONES AYC SPA</p>
             <p>Fabricación, montaje y asesoría en estructuras metálicas</p>
         </div>

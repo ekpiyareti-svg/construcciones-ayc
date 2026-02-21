@@ -89,28 +89,43 @@
     </div>
 </section>
 
-<!-- CONTACTO -->
-<section class="contacto">
-    <h2 class="titulo">CONTACTO</h2>
-    <div class="contacto-contenido">
-        <p><strong>Representante:</strong> Camila Bustamante J.</p>
-        <p><strong>WhatsApp / Teléfono:</strong> <a href="https://wa.me/56987308343" target="_blank">+56 9 8730 8343</a></p>
-        <p><strong>Empresa:</strong> CONSTRUCCIONES AYC SPA</p>
-        <p>Fabricación, montaje y asesoría en estructuras metálicas</p>
-    </div>
-</section>
+<!-- CONTACTO + FORMULARIO + MAPA -->
+<section class="contacto-final">
+    <div class="contacto-container">
+        <!-- FORMULARIO -->
+        <div class="contacto-formulario">
+            <h2 class="titulo">CONTÁCTANOS</h2>
+            <form action="https://formspree.io/f/maylnrvq" method="POST">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
 
-<!-- MAPA CON PIN ROJO ESTÁTICO -->
-<section class="mapa">
-    <div class="mapa-container">
-        <iframe 
-            src="https://www.google.com/maps?q=-40.5761897,-73.1149469&hl=es&z=16&output=embed"
-            width="780" 
-            height="350" 
-            style="border:0;" 
-            allowfullscreen="" 
-            loading="lazy">
-        </iframe>
+                <label for="email">Correo:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+            <div class="contacto-info">
+                <p><strong>Representante:</strong> Camila Bustamante J.</p>
+                <p><strong>WhatsApp / Teléfono:</strong> <a href="https://wa.me/56987308343" target="_blank">+56 9 8730 8343</a></p>
+                <p><strong>Empresa:</strong> CONSTRUCCIONES AYC SPA</p>
+                <p>Fabricación, montaje y asesoría en estructuras metálicas</p>
+            </div>
+        </div>
+
+        <!-- MAPA -->
+        <div class="contacto-mapa">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11453.183604761592!2d-73.1149469!3d-40.5761897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x968f1c5c6a7dff1f%3A0x0!2zTcKwMzQnMzUuMCJTIDczwrA2NicxMC4wIlc!5e0!3m2!1ses-419!2scl!4v1700000000000"
+                width="100%"
+                height="100%"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy">
+            </iframe>
+        </div>
     </div>
 </section>
 

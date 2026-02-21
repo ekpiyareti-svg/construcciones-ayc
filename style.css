@@ -1,5 +1,3 @@
-/* ===================== */
-/* GENERAL */
 * {
     margin: 0;
     padding: 0;
@@ -10,18 +8,9 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     background: #111111;
     color: #e4e4e4;
+    scroll-behavior: smooth;
 }
 
-/* ===================== */
-/* IMÁGENES */
-img {
-    max-width: 780px;
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-/* ===================== */
 /* HEADER */
 .header {
     background: #0b0b0b;
@@ -46,7 +35,6 @@ img {
     color: #ffffff;
 }
 
-/* ===================== */
 /* HERO */
 .hero {
     height: 60vh;
@@ -71,7 +59,6 @@ img {
     color: #cccccc;
 }
 
-/* ===================== */
 /* TITULOS */
 .titulo {
     text-align: center;
@@ -80,7 +67,6 @@ img {
     color: #ff2a2a;
 }
 
-/* ===================== */
 /* VALORES */
 .valores {
     padding: 80px 20px;
@@ -119,7 +105,6 @@ img {
     color: #d0d0d0;
 }
 
-/* ===================== */
 /* GALERÍA */
 .galeria {
     padding: 80px 20px;
@@ -145,7 +130,6 @@ img {
     box-shadow: 0 15px 35px rgba(179, 0, 0, 0.5);
 }
 
-/* ===================== */
 /* EXPERIENCIA */
 .experiencia {
     padding: 80px 40px;
@@ -182,39 +166,112 @@ img {
     object-fit: cover;
 }
 
-/* ===================== */
-/* CONTACTO */
-.contacto {
+/* CONTACTO FINAL */
+.contacto-final {
     padding: 80px 20px;
     background: #111111;
-    text-align: center;
 }
 
-.contacto a {
+.contacto-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+/* FORMULARIO */
+.contacto-formulario {
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+    padding: 30px;
+    background: #1a1a1a;
+    border-radius: 12px;
+    border: 2px solid #ff2a2a;
+}
+
+.contacto-formulario h2 {
+    color: #ff2a2a;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contacto-formulario label {
+    display: block;
+    margin-bottom: 5px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.contacto-formulario input,
+.contacto-formulario textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    background: #222;
+    color: #fff;
+}
+
+.contacto-formulario button {
+    background: #ff2a2a;
+    color: #fff;
+    font-weight: bold;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.contacto-formulario button:hover {
+    background: #b30000;
+}
+
+.contacto-info p {
+    margin: 8px 0;
+    color: #ccc;
+}
+
+.contacto-info a {
     color: #ff2a2a;
     text-decoration: none;
     font-weight: bold;
 }
 
-.contacto a:hover {
+.contacto-info a:hover {
     text-decoration: underline;
 }
 
-.contacto-contenido p {
-    margin: 8px 0;
-}
-
-/* ===================== */
 /* MAPA */
-.mapa-container {
-    margin: 50px auto;
-    max-width: 780px;
+.contacto-mapa {
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+    height: 500px;
     border: 4px solid #ff2a2a;
     border-radius: 12px;
     overflow: hidden;
 }
 
-/* ===================== */
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .contacto-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contacto-mapa {
+        height: 350px;
+        max-width: 780px;
+    }
+}
+
 /* FOOTER */
 .footer {
     background: #000000;

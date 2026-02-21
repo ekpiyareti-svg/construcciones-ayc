@@ -1,0 +1,31 @@
+body{font-family:'Roboto',sans-serif;margin:0;padding:0;background:#1b1b1b;color:#fff;}
+header{display:flex;justify-content:space-between;align-items:center;padding:15px 50px;background:#111;position:fixed;width:100%;z-index:1000;}
+header .logo img{height:70px;}
+nav ul{list-style:none;display:flex;gap:25px;}
+nav ul li a{color:#fff;text-decoration:none;font-weight:600;transition:.3s;}
+nav ul li a:hover{color:#e60000;}
+.hero{height:90vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;position:relative;overflow:hidden;}
+.hero-bg{position:absolute;top:0;left:0;width:100%;height:100%;background:url('images/1.jpg') center/cover no-repeat;filter:brightness(0.5);}
+.hero-content{position:relative;z-index:2;max-width:700px;}
+.hero-content h1{font-size:3rem;margin-bottom:10px;}
+.hero-content p{font-size:1.2rem;margin-bottom:20px;}
+.btn{padding:10px 20px;background:#e60000;color:#fff;font-weight:bold;border-radius:5px;text-decoration:none;transition:.3s;}
+.btn:hover{background:#ff1a1a;}
+.contacto-directo{margin-top:15px;font-size:1.1rem;font-weight:bold;}
+section{padding:80px 50px;}
+h2{text-align:center;margin-bottom:40px;font-size:2rem;color:#e60000;}
+.cards-container{display:flex;flex-wrap:wrap;gap:20px;justify-content:center;}
+.card{background:#2a2a2a;border-radius:10px;padding:15px;width:280px;text-align:center;transition:.4s;}
+.card img{width:100%;height:150px;object-fit:cover;border-radius:5px;margin-top:10px;}
+.card:hover{transform:translateY(-8px);box-shadow:0 8px 20px rgba(230,0,0,0.5);}
+.projects-carousel{display:flex;overflow-x:auto;gap:15px;padding-bottom:10px;}
+.project-card{min-width:280px;background:#2a2a2a;border-radius:10px;overflow:hidden;flex-shrink:0;}
+.project-card img{width:100%;height:180px;object-fit:cover;}
+.contact-container{display:flex;flex-wrap:wrap;gap:20px;justify-content:center;align-items:flex-start;}
+.contact-info{flex:1;max-width:350px;}
+form{flex:1;max-width:350px;display:flex;flex-direction:column;gap:10px;}
+input,textarea{padding:10px;border:none;border-radius:5px;}
+button{background:#e60000;border:none;padding:12px;color:#fff;font-weight:bold;border-radius:5px;cursor:pointer;transition:.3s;}
+button:hover{background:#ff1a1a;}
+footer{text-align:center;padding:20px 0;background:#111;}
+@media(max-width:768px){.cards-container,.projects-carousel,.contact-container{flex-direction:column;}}

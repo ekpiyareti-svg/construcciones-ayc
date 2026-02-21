@@ -287,3 +287,187 @@ body {
         height: 300px;
     }
 }
+
+/* =========================
+   VERSION MOVIL OPTIMIZADA
+   ========================= */
+@media (max-width: 768px) {
+
+    body {
+        font-size: 15px;
+    }
+
+    /* HEADER */
+    .header {
+        padding: 10px 15px;
+    }
+
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .logo {
+        height: 55px;
+    }
+
+    .empresa h1 {
+        font-size: 18px;
+    }
+
+    /* HERO */
+    .hero {
+        height: 45vh;
+        padding: 20px;
+    }
+
+    .hero-overlay h2 {
+        font-size: 24px;
+        line-height: 1.3;
+    }
+
+    .hero-overlay p {
+        font-size: 14px;
+    }
+
+    /* TITULOS GENERALES */
+    .titulo {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+
+    /* VALORES CARDS */
+    .cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .card {
+        max-width: 95%;
+        padding: 20px;
+    }
+
+    .card h3 {
+        font-size: 18px;
+    }
+
+    .card p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    /* POR QUE ELEGIRNOS (letras mas bonitas y legibles) */
+    .porque-cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .card-pe {
+        max-width: 95%;
+        padding: 20px;
+    }
+
+    .card-pe h3 {
+        font-size: 18px;
+        letter-spacing: 0.5px;
+    }
+
+    .card-pe p {
+        font-size: 14px;
+        line-height: 1.7;
+        color: #cfcfcf;
+    }
+
+    /* GALERIA */
+    .galeria-grid {
+        grid-template-columns: 1fr; /* 1 columna en móvil */
+        gap: 15px;
+    }
+
+    .galeria-grid img {
+        height: 200px;
+    }
+
+    /* EXPERIENCIA */
+    .experiencia {
+        padding: 50px 20px;
+    }
+
+    .experiencia-contenido {
+        flex-direction: column;
+        text-align: center;
+        gap: 25px;
+    }
+
+    .texto h2 {
+        font-size: 22px;
+    }
+
+    .texto p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .imagen img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* CONTACTO + MAPA (CLAVE) */
+    .contacto-mapa {
+        padding: 60px 15px;
+    }
+
+    .contacto-flex {
+        flex-direction: column; /* Formulario arriba, mapa abajo */
+        gap: 25px;
+        align-items: center;
+    }
+
+    .form-contacto {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .form-contacto input,
+    .form-contacto textarea {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    .form-contacto button {
+        font-size: 15px;
+        padding: 12px;
+    }
+
+    /* MAPA ARREGLADO PARA MOVIL */
+    .mapa-container {
+        width: 100%;
+        max-width: 100%;
+        height: 280px; /* tamaño perfecto en celular */
+    }
+
+    .mapa-container iframe {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    }
+
+    /* INFO CONTACTO */
+    .info-contacto {
+        font-size: 14px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    /* FOOTER */
+    .footer {
+        font-size: 12px;
+        padding: 20px 10px;
+    }
+}

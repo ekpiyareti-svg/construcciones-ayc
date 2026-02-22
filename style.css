@@ -101,12 +101,81 @@ body { font-family: 'Roboto', sans-serif; color:#333; background:#f9f9f9; line-h
    RESPONSIVE
 ---------------------------- */
 @media(max-width:768px){
-.header-container{ flex-direction:column; align-items:flex-start; }
-.nav{ margin-top:10px; display:flex; flex-wrap:wrap; gap:10px;}
-.empresa-container,.contacto-container{ flex-direction:column;}
-.hero h2{ font-size:2rem;}
-.hero p{ font-size:1rem;}
-.contacto-info,.contacto-img{ flex:1 1 100%; }
-.contacto-info{ padding:30px 20px; }
-.btn-whatsapp{ width:100%; text-align:center;}
+    /* Header se acomoda verticalmente */
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 15px;
+    }
+
+    /* Logo y empresa centrados */
+    .logo-area {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+        margin-bottom: 10px;
+    }
+
+    .empresa h1 {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .empresa p {
+        font-size: 0.8rem;
+        text-align: center;
+    }
+
+    /* Navegación centrada y con espacio */
+    .nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .nav a {
+        margin: 5px;
+        font-size: 0.9rem;
+    }
+
+    .btn-nav {
+        padding: 6px 12px;
+        font-size: 0.9rem;
+    }
+
+    /* Hero ajustado para móviles */
+    .hero h2 {
+        font-size: 1.8rem;
+    }
+
+    .hero p {
+        font-size: 0.95rem;
+    }
+
+    .btn-principal {
+        padding: 10px 20px;
+        font-size: 0.95rem;
+    }
+
+    /* Secciones generales */
+    .empresa-container,
+    .contacto-container {
+        flex-direction: column;
+    }
+
+    .contacto-info,
+    .contacto-img {
+        flex: 1 1 100%;
+    }
+
+    .contacto-info {
+        padding: 30px 20px;
+    }
+
+    .btn-whatsapp {
+        width: 100%;
+        text-align: center;
+    }
 }

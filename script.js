@@ -1,5 +1,6 @@
 let lastScroll = 0;
 const header = document.querySelector('.header');
+const MOBILE_BREAKPOINT = 768;
 
 window.addEventListener('scroll', () => {
     const currentScroll = window.scrollY;
@@ -11,12 +12,16 @@ window.addEventListener('scroll', () => {
         header.classList.remove('shrink');
     }
 
-    // Oculta header al bajar, muestra al subir
-    if(currentScroll > lastScroll && currentScroll > 100){
-        // bajando
-        header.classList.add('hide');
+    // Oculta header al bajar, muestra al subir (solo en teléfono)
+    if(window.innerWidth <= MOBILE_BREAKPOINT){
+        if(currentScroll > lastScroll && currentScroll > 100){
+            // bajando
+            header.classList.add('hide');
+        } else {
+            // subiendo
+            header.classList.remove('hide');
+        }
     } else {
-        // subiendo
         header.classList.remove('hide');
     }
 
